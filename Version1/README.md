@@ -4,10 +4,10 @@
 ## Description:
 The application uses:
 * Flask framework to create REST APIs
-* SQLAlchemy allows managing database using ORMs in python
+* SQLAlchemy to manage database using ORMs in python
 
 ### The application creates a sqlite database containing two tables:
-#### 1.planets   [This can store information about the planets]
+#### 1.planets   [To store information about the planets]
    ```
    planet_id (primary key)
    planet_name
@@ -18,7 +18,7 @@ The application uses:
    distance
    ```
    
-#### 2. users   [Users can manage the planets data by adding new planets, updating it or deleting with user authentication]
+#### 2. users   [To store Users information. Users can manage the planets data by adding new planets, updating it or deleting with user authentication]
 ```
   user_id (primary key)
   first_name
