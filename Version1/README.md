@@ -5,6 +5,7 @@
 The application uses:
 * Flask framework to create REST APIs
 * SQLAlchemy to manage database using ORMs in python
+* Docker to host the application
 
 ## Technologies
 This project is created with:
@@ -16,7 +17,7 @@ This project is created with:
  * flask-marshmallow version: 0.12.0
  * marshmallow version: 3.6.0
 
-### The application creates a sqlite database containing two tables:
+## The application creates a sqlite database containing two tables:
 #### 1.planets   [To store information about the planets]
    ```
    planet_id (primary key)
@@ -37,5 +38,17 @@ This project is created with:
   password
   ```
   
+  ## To run the application
+  ### 1. Using docker-compose
+  This command will build the application as well as execute it.
   
+  `docker-compose up --build`
   
+  ### 2. Using docker build and docker run
+  
+  `docker build -t flaskimage .`
+  `docker run -p 5000:5000 flaskimage`
+  
+  ### 3. With no docker
+   
+   `python server.py`
