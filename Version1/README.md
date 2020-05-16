@@ -46,8 +46,8 @@ This project is created with:
   
   ### 2. Using docker build and docker run
   
-  `docker build -t flaskimage .`
-  `docker run -p 5000:5000 flaskimage`
+  `docker build -t flaskimage .
+   docker run -p 5000:5000 flaskimage`
   
   ### 3. With no docker
    
