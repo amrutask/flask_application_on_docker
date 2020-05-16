@@ -13,7 +13,7 @@ def get_all_planets():
     return jsonify(data), 200
 
     '''
-    #OR this using json                    # This can be used if not marshamallow
+    #OR this using json                    # This can be used if not marshmallow
     result =[]
     for planet in planets:
         new_planet = {
@@ -53,7 +53,7 @@ def search_planet(id):
         return jsonify(planet_schema.dump(planet)), 200
 
         '''
-        #Or this using json                 # This can be used if not marshamallow
+        #Or this using json                 # This can be used if not marshmallow
         result = {
             "planet_id":test.planet_id,
             "planet_name":test.planet_name,

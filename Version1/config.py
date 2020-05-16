@@ -16,9 +16,6 @@ app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 #creating SQLAlchemy database instance
 db = SQLAlchemy(app)
 
-#Initializing marshmallow for serialization
-#ma = Marshmallow(app)
-
 #To generate JWT tokens for API security
 app.config['JWT_SECRET_KEY'] = 'super-secret'
 jwt = JWTManager(app)
